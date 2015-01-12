@@ -74,7 +74,7 @@ Thanks to RMIT Training's contributing developers
 * Abi Bellamkonda - [@abibell](https://github.com/abibell)
 * Dominic Crowther [@vijayshiyani](https://github.com/vijayshiyani)
 * Deepak Vasa - [@vijayshiyani](https://github.com/vijayshiyani)
-* Yingli Cao - [@vijayshiyani](https://github.com/vijayshiyani)
+* Yingli Cao - [@caoglish](https://github.com/caoglish)
 * Kirthana Madam Raja [@kirthanaraja](https://github.com/kirthanaraja)
 * Debashish Paul - [@shimanbb](https://github.com/shimanbb)
 * Anshu Dutta - [@anshudutta](https://github.com/anshudutta)
