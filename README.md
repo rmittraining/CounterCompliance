@@ -7,7 +7,7 @@ This is RMIT Training's Open Source implementation of Counter Compliance server 
 1. Support for formats like CSV, TSV and HTML
 1. Ability to customise to your choice using XSLT files provided
 1. Ability to connect to your live data using your custom SQL Queries or any other data source.
-2. 
+
 # Getting Started
 
 ## Download and Run
