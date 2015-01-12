@@ -1,0 +1,109 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <Start>2014-02-01T00:00:00+11:00</Start>
+    <End>2014-02-28T00:00:00+11:00</End>
+    <Category>Requests</Category>
+    <VendorName>Sample VendorName</VendorName>
+    <VendorID>http://sample.com.au</VendorID>
+    <VendorContactName>Customer Service</VendorContactName>
+    <VendorContactEmail>support@sample.com.au</VendorContactEmail>
+    <CustomerName>University Library</CustomerName>
+    <CustomerId>00</CustomerId>
+    <CustomerContactName>Library Resources and Access</CustomerContactName>
+    <CustomerContactEmail>orders.library@sample.edu.au</CustomerContactEmail>
+    <CreatedDateTime>2014-12-19T11:57:49.653+11:00</CreatedDateTime>
+    <StartDate>2014-02-01T00:00:00+11:00</StartDate>
+    <EndDate>2014-02-28T00:00:00+11:00</EndDate>
+  </Table>
+  <Table1>
+    <Print_ISSN>0001</Print_ISSN>
+    <Platform>Informit</Platform>
+    <Publisher>XXX publisher</Publisher>
+    <Name>XXX</Name>
+    <DataType>Journal</DataType>
+    <ArticlesInPress>0</ArticlesInPress>
+  </Table1>
+  <Table1>
+    <Print_ISSN>0002</Print_ISSN>
+    <Platform>Informit</Platform>
+    <Publisher>YYY publisher</Publisher>
+    <Name>YYY</Name>
+    <DataType>Journal</DataType>
+    <ArticlesInPress>0</ArticlesInPress>
+  </Table1>
+  <Table1>
+    <Print_ISSN>0003</Print_ISSN>
+    <Platform>Informit</Platform>
+    <Publisher>ZZZ publisher</Publisher>
+    <Name>ZZZ</Name>
+    <DataType>Journal</DataType>
+    <ArticlesInPress>0</ArticlesInPress>
+  </Table1>
+  <Table1>
+    <Print_ISSN>0004</Print_ISSN>
+    <Platform>Informit</Platform>
+    <Publisher>AAA publisher</Publisher>
+    <Name>AAA Journal</Name>
+    <DataType>Journal</DataType>
+    <ArticlesInPress>0</ArticlesInPress>
+  </Table1>
+  <Table1>
+    <Print_ISSN>0005</Print_ISSN>
+    <Platform>Informit</Platform>
+    <Publisher>BBB publisher</Publisher>
+    <Name>BBB</Name>
+    <DataType>Journal</DataType>
+    <ArticlesInPress>0</ArticlesInPress>
+  </Table1>
+  <Table2>
+    <ISSN>0005</ISSN>
+    <PubYrFrom>1998</PubYrFrom>
+    <PubYrTo>1998</PubYrTo>
+    <Count>1</Count>
+  </Table2>
+  <Table2>
+    <ISSN>0001</ISSN>
+    <PubYrFrom>2003</PubYrFrom>
+    <PubYrTo>2003</PubYrTo>
+    <Count>1</Count>
+  </Table2>
+  <Table2>
+    <ISSN>0002</ISSN>
+    <Count>2</Count>
+  </Table2>
+  <Table2>
+    <ISSN>0003</ISSN>
+    <PubYrFrom>2012</PubYrFrom>
+    <PubYrTo>2012</PubYrTo>
+    <Count>1</Count>
+  </Table2>
+  <Table2>
+    <ISSN>0004</ISSN>
+    <PubYrFrom>2006</PubYrFrom>
+    <PubYrTo>2006</PubYrTo>
+    <Count>1</Count>
+  </Table2>
+  <Table3>
+    <PubYrFrom>2003</PubYrFrom>
+    <PubYrTo>2003</PubYrTo>
+    <Count>1</Count>
+  </Table3>
+  <Table3>
+    <PubYrFrom>2012</PubYrFrom>
+    <PubYrTo>2012</PubYrTo>
+    <Count>1</Count>
+  </Table3>
+  <Table3>
+    <PubYrFrom>2006</PubYrFrom>
+    <PubYrTo>2006</PubYrTo>
+    <Count>1</Count>
+  </Table3>
+  <Table3>
+    <PubYrTo>1999</PubYrTo>
+    <Count>1</Count>
+  </Table3>
+  <Table3>
+    <Count>2</Count>
+  </Table3>
+</NewDataSet>

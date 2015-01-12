@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.ReportRequest" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAABAgAAAAAAAAAAAAAAAAAQAQAAAAQAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.Requestor" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.Activity" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.Exception" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAEAAAAAAAAAAABQAAAAAIAQAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.ReportResponse" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAABAgAAAAAAAAAAAAAAAAAQAQABAAQAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.CustomerReference" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.ReportDefinition" Collapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.ReportDefinitionFilters" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.Range" Collapsed="true">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.GetReportRequest" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.GetReportResponse" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RMIT.Counter.Libraries.Sushi.Core.CounterReportResponse" Collapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="RMIT.Counter.Libraries.Sushi.Core.ExceptionSeverity" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAABAAAAAAAAAAAAAAAEAEAAA=</HashCode>
+      <FileName>WSDL Schema\Sushi.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

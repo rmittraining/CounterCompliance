@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,29 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+using System.Collections.Generic;
 
+namespace RMIT.Counter.Libraries.Sushi.Core
+{
+    /// <summary>
+    ///     Defines an interface for objects that retrieve Counter report data
+    ///     given a customer and a usage date range.
+    /// </summary>
+    /// <remarks>
+    ///     Developers wishing to implement their own Sushi service should implement
+    ///     this interface in their Data Access Layer.  This interface's goal should
+    ///     be to execute a query against the appropriate usage repository to retrieve
+    ///     the desired usage statistics, formatting those statistic into the Counter
+    ///     Reports object graph.
+    /// </remarks>
+    public interface IUsageReportRepository
+    {
+        /// <summary>
+        ///     Gets Counter report data given a customer and a usage date range.
+        /// </summary>
+        /// <param name="request">The request object from the webservice.</param>
+        /// <returns>Counter report data for the given customer and date range.</returns>
+        List<Report> GetUsageReports(ReportRequest request);
+    }
+}

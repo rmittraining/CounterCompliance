@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7CB5143-836C-490F-AAB1-4A8DCC1055D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RMIT.Counter.Libraries.Reporting</RootNamespace>
+    <AssemblyName>RMIT.Counter.Libraries.Reporting</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ReportUsageLogWriter.cs" />
+    <Compile Include="Reports\Br2.cs" />
+    <Compile Include="Common\Config.cs" />
+    <Compile Include="Common\ReportFormat.cs" />
+    <Compile Include="Common\VendorInformation.cs" />
+    <Compile Include="Interfaces\IReportData.cs" />
+    <Compile Include="Interfaces\ITransform.cs" />
+    <Compile Include="ReportGenerator.cs" />
+    <Compile Include="Reports\Br1.cs" />
+    <Compile Include="Reports\Mr1.cs" />
+    <Compile Include="Reports\Jr5.cs" />
+    <Compile Include="Reports\ReportDataBase.cs" />
+    <Compile Include="Common\XslTransform.cs" />
+    <Compile Include="Reports\Jr1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Xslt\Br1\Csv.xslt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\Xslt\Br1\Html.xslt" />
+    <None Include="Reports\Xslt\Br1\Shusi.xslt" />
+    <None Include="Reports\Xslt\Br1\Tsv.xslt" />
+    <None Include="Reports\Xslt\Br2\Csv.xslt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\Xslt\Br2\Html.xslt" />
+    <None Include="Reports\Xslt\Br2\Shusi.xslt" />
+    <None Include="Reports\Xslt\Br2\Tsv.xslt" />
+    <None Include="Reports\Xslt\Jr1\Tsv.xslt" />
+    <None Include="Reports\Xslt\Jr1\Csv.xslt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\Xslt\Jr1\Shusi.xslt" />
+    <None Include="Reports\Xslt\Jr1\Html.xslt" />
+    <None Include="Reports\Xslt\Jr5\Html.xslt" />
+    <None Include="Reports\Xslt\Jr5\Tsv.xslt" />
+    <None Include="Reports\Xslt\Jr5\Csv.xslt" />
+    <None Include="Reports\Xslt\Jr5\Shusi.xslt" />
+    <None Include="Reports\Xslt\Mr1\Tsv.xslt" />
+    <None Include="Reports\Xslt\Mr1\Csv.xslt" />
+    <None Include="Reports\Xslt\Mr1\Shusi.xslt" />
+    <None Include="Reports\Xslt\Mr1\Html.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{1c2d6264-2084-4494-8276-d47342e6973b}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

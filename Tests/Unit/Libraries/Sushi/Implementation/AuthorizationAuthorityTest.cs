@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,34 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using NUnit.Framework;
+using RMIT.Counter.Libraries.Sushi.Core;
+using RMIT.Counter.Libraries.Sushi.Implementation;
+
+#endregion
+
+namespace RMIT.Counter.Test.Unit.Libraries.Sushi.Implementation
+{
+    [TestFixture]
+    public class AuthorizationAuthorityTest
+    {
+        [TestCase("123ABC", "guest", Result = true)]
+        [TestCase("123ABC", "GUEST", Result = true)]
+        [TestCase("wrong", "guest", Result = false)]
+        [TestCase("wrong", "GUEST", Result = false)]
+        [TestCase("123ABC", "wrong", Result = false)]
+        [TestCase("wrong", " guest ", Result = false)]
+        public bool CombinationChecks(string id, string name)
+        {
+            //Arrange
+            var authority = new AuthorizationAuthority();
+            var customerReference = new CustomerReference {ID = id, Name = name};
+            
+            //Act
+            return authority.IsRequestorAuthorized(null, customerReference);
+        }
+    }
+}

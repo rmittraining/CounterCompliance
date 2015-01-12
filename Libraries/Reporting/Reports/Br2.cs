@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,43 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using System;
+using System.Data;
+using RMIT.Counter.Libraries.Library.Models;
+using RMIT.Counter.Libraries.Reporting.Common;
+
+#endregion
+
+namespace RMIT.Counter.Libraries.Reporting.Reports
+{
+    public class Br2 : ReportDataBase
+    {
+        public Br2(Users user, DateTime start, DateTime end) : base(user, start, end)
+        {
+        }
+
+        public override DataSet GetDataset()
+        {
+            var ds = base.GetDataset();
+
+            ds.DataSetName = "ReportData";
+            ds.Tables[0].TableName = "Header";
+            ds.Tables[1].TableName = "Item";
+            ds.Tables[2].TableName = "ItemPerformance";
+            ds.Tables[3].TableName = "ItemPerformanceMonthlySummary";
+
+            var dataPeriod = ds.Relations.Add(ds.Tables["Item"].Columns["ISBN"],
+                ds.Tables["ItemPerformance"].Columns["ISBN"]);
+            dataPeriod.Nested = true;
+            return ds;
+        }
+
+        protected override int DefaultTimeOut
+        {
+            get { return Config.TimeoutLarge; }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,42 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using System.Linq.Expressions;
+using System.Reflection;
+
+#endregion
+
+namespace RMIT.Counter.Libraries.Library.Common
+{
+    public class IsNullVisitor : ExpressionVisitor
+    {
+        public bool IsNull { get; private set; }
+        public object CurrentObject { get; set; }
+
+        protected override Expression VisitMember(MemberExpression node)
+        {
+            base.VisitMember(node);
+            if (CheckNull())
+            {
+                return node;
+            }
+
+            var member = (PropertyInfo) node.Member;
+            CurrentObject = member.GetValue(CurrentObject, null);
+            CheckNull();
+            return node;
+        }
+
+        private bool CheckNull()
+        {
+            if (CurrentObject == null)
+            {
+                IsNull = true;
+            }
+            return IsNull;
+        }
+    }
+}

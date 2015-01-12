@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,22 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using System;
+
+#endregion
+
+namespace RMIT.Counter.Libraries.Reporting.Common
+{
+    public static class ReportUsageLogWriter
+    {
+        public static void Flush(string userName, string reportName, string reportType, DateTime reportStartDate,
+            DateTime reportEndDate, DateTime reportRequestedDate, string sushiId, int? sushiStatusCode,
+            string exceptionMessage)
+        {
+               // write logic to flush out report usage logs. 
+        }
+    }
+}

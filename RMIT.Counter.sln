@@ -1,0 +1,119 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{42F31DC4-DDFC-43D7-A55F-B2DBE82A4081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Libraries\Library\Library.csproj", "{1C2D6264-2084-4494-8276-D47342E6973B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reporting", "Libraries\Reporting\Reporting.csproj", "{C7CB5143-836C-490F-AAB1-4A8DCC1055D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sushi", "Libraries\Sushi\Sushi.csproj", "{1196344F-584B-4C5A-BE4E-58427839B6CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sushi Core", "Libraries\Sushi Core\Sushi Core.csproj", "{C374B425-B271-476C-B197-0359EA57F639}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0CBD2E01-1D09-4A21-A9E3-40A752C0D665}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{53D9D038-618E-49BC-8D95-766F1F9DBFE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sushi Service", "Applications\Sushi Service\Sushi Service.csproj", "{2EBF8299-7497-4F2F-9A39-8838739E91CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{C70BBD6D-FB83-446E-9B24-2B400F9DD0F6}"
+	ProjectSection(SolutionItems) = preProject
+		Data\Br1.xml = Data\Br1.xml
+		Data\Br1.xsd = Data\Br1.xsd
+		Data\Br2.xml = Data\Br2.xml
+		Data\Br2.xsd = Data\Br2.xsd
+		Data\Jr1.xml = Data\Jr1.xml
+		Data\JR1.xsd = Data\JR1.xsd
+		Data\Jr5.xml = Data\Jr5.xml
+		Data\JR5.xsd = Data\JR5.xsd
+		Data\Mr1.xml = Data\Mr1.xml
+		Data\Mr1.xsd = Data\Mr1.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documntation", "Documntation", "{E61CBDA6-D78D-41D7-94A1-33FCB423DA68}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		\\ntapprdfs01n02.rmit.internal\eh5\e11275\Configuration\Desktop\ReadMe.docx = \\ntapprdfs01n02.rmit.internal\eh5\e11275\Configuration\Desktop\ReadMe.docx
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F3FBE224-7CCE-4762-95DC-89A1E9F51F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit", "Tests\Unit\Unit.csproj", "{4C98E331-DD81-4539-BC1A-740FD6800634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration", "Tests\Integration\Integration.csproj", "{BA91649A-2665-4043-ADED-2DE78B4DECB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sushi Client", "Applications\Sushi Client\Sushi Client.csproj", "{B90FE645-DB20-43C2-8243-563C631ED64D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterReports", "Applications\CounterReports\CounterReports.csproj", "{8A6E561A-AECA-48C9-838F-3A9C5C715937}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C2D6264-2084-4494-8276-D47342E6973B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2D6264-2084-4494-8276-D47342E6973B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2D6264-2084-4494-8276-D47342E6973B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2D6264-2084-4494-8276-D47342E6973B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7CB5143-836C-490F-AAB1-4A8DCC1055D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7CB5143-836C-490F-AAB1-4A8DCC1055D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7CB5143-836C-490F-AAB1-4A8DCC1055D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7CB5143-836C-490F-AAB1-4A8DCC1055D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1196344F-584B-4C5A-BE4E-58427839B6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1196344F-584B-4C5A-BE4E-58427839B6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1196344F-584B-4C5A-BE4E-58427839B6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1196344F-584B-4C5A-BE4E-58427839B6CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C374B425-B271-476C-B197-0359EA57F639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C374B425-B271-476C-B197-0359EA57F639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C374B425-B271-476C-B197-0359EA57F639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C374B425-B271-476C-B197-0359EA57F639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EBF8299-7497-4F2F-9A39-8838739E91CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EBF8299-7497-4F2F-9A39-8838739E91CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EBF8299-7497-4F2F-9A39-8838739E91CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EBF8299-7497-4F2F-9A39-8838739E91CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C98E331-DD81-4539-BC1A-740FD6800634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C98E331-DD81-4539-BC1A-740FD6800634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C98E331-DD81-4539-BC1A-740FD6800634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C98E331-DD81-4539-BC1A-740FD6800634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA91649A-2665-4043-ADED-2DE78B4DECB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA91649A-2665-4043-ADED-2DE78B4DECB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA91649A-2665-4043-ADED-2DE78B4DECB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA91649A-2665-4043-ADED-2DE78B4DECB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B90FE645-DB20-43C2-8243-563C631ED64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B90FE645-DB20-43C2-8243-563C631ED64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B90FE645-DB20-43C2-8243-563C631ED64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B90FE645-DB20-43C2-8243-563C631ED64D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A6E561A-AECA-48C9-838F-3A9C5C715937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6E561A-AECA-48C9-838F-3A9C5C715937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6E561A-AECA-48C9-838F-3A9C5C715937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6E561A-AECA-48C9-838F-3A9C5C715937}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C2D6264-2084-4494-8276-D47342E6973B} = {42F31DC4-DDFC-43D7-A55F-B2DBE82A4081}
+		{C7CB5143-836C-490F-AAB1-4A8DCC1055D8} = {42F31DC4-DDFC-43D7-A55F-B2DBE82A4081}
+		{1196344F-584B-4C5A-BE4E-58427839B6CD} = {42F31DC4-DDFC-43D7-A55F-B2DBE82A4081}
+		{C374B425-B271-476C-B197-0359EA57F639} = {42F31DC4-DDFC-43D7-A55F-B2DBE82A4081}
+		{2EBF8299-7497-4F2F-9A39-8838739E91CD} = {53D9D038-618E-49BC-8D95-766F1F9DBFE5}
+		{4C98E331-DD81-4539-BC1A-740FD6800634} = {F3FBE224-7CCE-4762-95DC-89A1E9F51F69}
+		{BA91649A-2665-4043-ADED-2DE78B4DECB7} = {F3FBE224-7CCE-4762-95DC-89A1E9F51F69}
+		{B90FE645-DB20-43C2-8243-563C631ED64D} = {53D9D038-618E-49BC-8D95-766F1F9DBFE5}
+		{8A6E561A-AECA-48C9-838F-3A9C5C715937} = {53D9D038-618E-49BC-8D95-766F1F9DBFE5}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

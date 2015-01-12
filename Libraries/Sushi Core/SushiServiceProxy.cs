@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,28 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using System.ServiceModel;
+
+#endregion
+
+namespace RMIT.Counter.Libraries.Sushi.Core
+{
+    /// <summary>
+    ///     Provides a proxy to a hosted instance of the <see cref="ISushiService" /> interface.
+    /// </summary>
+    public class SushiServiceProxy : ClientBase<ISushiService>, ISushiService
+    {
+        /// <summary>
+        ///     Executes a proxied request to the <see cref="ISushiService" /> method.
+        /// </summary>
+        /// <param name="request">The report request.</param>
+        /// <returns>The deserialized report response.</returns>
+        public GetReportResponse GetReport(GetReportRequest request)
+        {
+            return Channel.GetReport(request);
+        }
+    }
+}

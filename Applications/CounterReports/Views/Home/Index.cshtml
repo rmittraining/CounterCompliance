@@ -1,0 +1,222 @@
+﻿@*<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
+        a broad range of clients, including browsers and mobile devices. ASP.NET Web API
+        is an ideal platform for building RESTful applications on the .NET Framework.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+    </div>
+</div>*@
+
+
+
+
+<br>
+<form id="myForm" action="http://localhost:16817/api/report" method="post" role="form" class="form-horizontal">
+
+    <div class="form-group">
+        <label for="Report_Format_id" class="col-sm-2 control-label">Report_Format :</label>
+        <div class="col-sm-10">
+            <select id="Report_Format_id" name="Report_Format" size="1" class="form-control">
+                <option selected="" value="html">HTML</option>
+                <option value="tsv">TSV</option>
+                <option value="csv">CSV</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="Report_Name" class="col-sm-2 control-label">Report_Name  :</label>
+        <div class="col-sm-10">
+            <input type="text" name="Report_Name" id="Report_Name" placeholder="name of report" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="Report_Desc" class="col-sm-2 control-label">Report_Desc :</label>
+        <div class="col-sm-10">
+            <input type="text" name="Report_Desc" id="Report_Desc" placeholder="report discription" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="Report_Template_id" class="col-sm-2 control-label">Report_Template :</label>
+        <div class="col-sm-10">
+            <select id="Report_Template_id" name="Report_Template" size="1" class="form-control">
+                <option selected="" value="Jr1">JR1</option>
+                <option value="Jr5">JR5</option>
+                <option value="Mr1">MR1</option>
+                <option value="Br1">BR1</option>
+                <option value="Br2">BR2</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="UserName" class="col-sm-2 control-label">Username :</label>
+        <div class="col-sm-10">
+            <input type="text" name="Users" value="guest" id="UserName" placeholder="username" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label for="Report_Start_Date_DFD" class="col-sm-2 control-label">Start :</label>
+        <div class="col-sm-10">
+            <select id="Report_Start_Date_DFD" name="Report_Start_Date_DFD" class="small" size="1">
+                <option value="">&nbsp;</option>
+                <option selected="" value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select id="Report_Start_Date_DFM" name="Report_Start_Date_DFM" class="small" size="1">
+                <option value="">&nbsp;</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option selected="" value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+            <select id="Report_Start_Date_DFY" name="Report_Start_Date_DFY" class="small" size="1">
+                <option value="">&nbsp;</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option selected="" value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+            </select>
+        </div>
+           
+    </div>
+    
+    <div class="form-group">
+
+        <label for="Report_End_Date_DFD" class="col-sm-2 control-label">END :</label>
+        <div class="col-sm-10">
+            <select id="Report_End_Date_DFD" name="Report_End_Date_DFD" class="small" size="1">
+                <option value="">&nbsp;</option>
+                <option value="1">1</option>
+                <option selected="" value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select id="Report_End_Date_DFM" name="Report_End_Date_DFM" class="small" size="1">
+                <option value="">&nbsp;</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option selected="" value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+            <select id="Report_End_Date_DFY" name="Report_End_Date_DFY" class="small" size="1">
+                <option value="">&nbsp;</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option selected="" value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+            </select>
+
+        </div>
+        </div>
+    
+    <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn-primary btn">Generate Report</button>
+            </div>
+        </div>
+
+</form>
+
+
+
