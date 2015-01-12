@@ -80,4 +80,4 @@ Thanks to RMIT Training's contributing developers
 * Anshu Dutta - [@anshudutta](https://github.com/anshudutta)
 
 ### Support Contact
-For support please contact http://informit.com.au/contact/default.aspx.
+Please log any support queries as issues. As this is open source effort, we will provide support as best efforts.
