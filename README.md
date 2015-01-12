@@ -41,11 +41,11 @@ This is RMIT Training's Open Source implementation of Counter Compliance server 
 
 # Customisation
 
-## Add custom authentication and Authorization
-**AuthorizationAuthority.cs** class inside the project **Sushi**, under **Libraries** folder is responsible for providing authorization.  Navigate to this class and add Custom Authorization. Currently, its sample data with username: “guest” and Id: “123ABC”.
+## Custom authentication and Authorization
+**AuthorizationAuthority.cs** class inside the project **Sushi**, under **Libraries** folder is responsible for providing authorization. Navigate to this class and add Custom Authorization. Currently, its sample data with username: “guest” and Id: “123ABC”.
 
-## Add your Data to produce your Counter reports 
-This project uses Sample data from **Data** folder to produce Counter and Sushi reports. However, it can be change by updating **ReportDataBase.cs** class GetDataset() method. **ReportDatabase.cs** class is in **Reporting** class library project under **Libraries** folder. Navigate to the GetDataset() Method and start adding different SQL Query/StoredProcedure for different reports (Jr1,Jr5 etc). SQL Query or StoredProcedure added make sure it return appropriate dataset. Dataset’s data must conform to XML Schema file (.xsd) in **Data** folder.
+## Using your Data
+This project uses Sample data from **Data** folder to produce Counter and Sushi reports. However, it can be change by updating **ReportDataBase.cs** class's GetDataset() method. You can connect your data and start producing Counter Compliant reports. **ReportDatabase.cs** class is in **Reporting** class library project under **Libraries** folder. Navigate to the GetDataset() Method and start adding different SQL Query/StoredProcedure for different reports (Jr1,Jr5 etc). SQL Query or StoredProcedure added make sure it return appropriate dataset. Dataset’s data must conform to XML Schema file (.xsd) in **Data** folder.
 
 For e.g. jr1 sql query must return dataset same as JR1.xsd in Data folder.
 
