@@ -1,4 +1,4 @@
-# CounterCompliance implementation
+# Counter Compliance implementation
 This is RMIT Training's Open Source implementation of Counter Compliance server for Release 4.
 
 ## Includes
