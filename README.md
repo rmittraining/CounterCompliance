@@ -69,7 +69,15 @@ This project uses Sample data from **Data** folder to produce Counter and Sushi 
 For e.g. jr1 sql query must return dataset same as JR1.xsd in Data folder.
 
 ### Authors and Contributors
-Thanks to RMIT Training's contributing developers [@abibell](https://github.com/abibell) and [@vijayshiyani](https://github.com/vijayshiyani).
+Thanks to RMIT Training's contributing developers
+* Vijay Shiyani - [@vijayshiyani](https://github.com/vijayshiyani)
+* Abi Bellamkonda - [@abibell](https://github.com/abibell)
+* Dominic Crowther [@vijayshiyani](https://github.com/vijayshiyani)
+* Deepak Vasa - [@vijayshiyani](https://github.com/vijayshiyani)
+* Yingli Cao - [@vijayshiyani](https://github.com/vijayshiyani)
+* Kirthana Madam Raja [@kirthanaraja](https://github.com/kirthanaraja)
+* Debashish Paul - [@shimanbb](https://github.com/shimanbb)
+* Anshu Dutta - [@anshudutta](https://github.com/anshudutta)
 
 ### Support Contact
 For support please contact http://informit.com.au/contact/default.aspx.
