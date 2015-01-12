@@ -1,3 +1,22 @@
+**Table of Contents**
+- [Counter Compliance implementation](#)
+	- [Includes](#)
+- [Getting Started](#)
+	- [Download and Run](#)
+	- [View CSV, TSV and HTML Counter Reports](#)
+	- [Retrieve Sushi reports with sushi client](#)
+- [Customisation](#)
+	- [Custom authentication and Authorization](#)
+	- [Using your Data](#)
+- [Project Structure](#)
+	- [Applications Folder](#)
+	- [Data folder](#)
+	- [Libraries folder](#)
+	- [Tests folder](#)
+- [Dependencies](#)
+- [Authors and Contributors](#)
+- [Support Contact](#)
+
 # Counter Compliance implementation
 This is RMIT Training's Open Source implementation of Counter Compliance server for Release 4.
 
@@ -10,7 +29,7 @@ This is RMIT Training's Open Source implementation of Counter Compliance server 
 
 # Getting Started
 
-## Download and Run
+## Download and Compile
 1. Download project from github to “C:\Temp\”. If you choose other location then “C:\Temp\” to download and save project then web.config file of **CounterReports** and **SushiService** project must be change accordingly
 ```xml
 <add key="Sushi.CounterXsltFolder" value="C:\Temp\RMIT.Counter\Libraries\Reporting\Reports\Xslt" />
@@ -86,7 +105,7 @@ We use NUnit for testing framework and NSubstitute for Mocking framework.
 Thanks to RMIT Training's contributing developers
 * Vijay Kumar Shiyani - [@vijayshiyani](https://github.com/vijayshiyani)
 * Abi Bellamkonda - [@abibell](https://github.com/abibell)
-* Dominic Crowther
+* Dominic Crowther [@dom-git](https://github.com/dom-git)
 * Deepak Vasa - [@deepakvasa](https://github.com/deepakvasa)
 * Yingli Cao - [@caoglish](https://github.com/caoglish)
 * Kirthana Madam Raja [@kirthanaraja](https://github.com/kirthanaraja)
