@@ -39,6 +39,16 @@ This is RMIT Training's Open Source implementation of Counter Compliance server 
 1. Change the report definition name from JR1 to JR5 or MR1 or BR1 or BR2 and invoke service again.
 1. Report Response window will display appropriate result.
 
+# Customisation
+
+## Add custom authentication and Authorization
+**AuthorizationAuthority.cs** class inside the project **Sushi**, under **Libraries** folder is responsible for providing authorization.  Navigate to this class and add Custom Authorization. Currently, its sample data with username: “guest” and Id: “123ABC”.
+
+## Add your Data to produce your Counter reports 
+This project uses Sample data from **Data** folder to produce Counter and Sushi reports. However, it can be change by updating **ReportDataBase.cs** class GetDataset() method. **ReportDatabase.cs** class is in **Reporting** class library project under **Libraries** folder. Navigate to the GetDataset() Method and start adding different SQL Query/StoredProcedure for different reports (Jr1,Jr5 etc). SQL Query or StoredProcedure added make sure it return appropriate dataset. Dataset’s data must conform to XML Schema file (.xsd) in **Data** folder.
+
+For e.g. jr1 sql query must return dataset same as JR1.xsd in Data folder.
+
 # Project Structure
 ## Applications Folder
 Applications folder Contains following applications
@@ -60,15 +70,19 @@ We use NUnit for testing framework and NSubstitute for Mocking framework.
 * **Unit** : contains testing code for Unit tests to test smallest possible source code
 * **Integration** : contains Integration tests to test more than Units
 
-# Add custom authentication and Authorization
-**AuthorizationAuthority.cs** class inside the project **Sushi**, under **Libraries** folder is responsible for providing authorization.  Navigate to this class and add Custom Authorization. Currently, its sample data with username: “guest” and Id: “123ABC”.
+# Dependencies
+* C# with .net Framework 4.5
+* [ASP.net](http://www.asp.net/)
+* [Web API](http://www.asp.net/web-api)
+* [Bootstrap](http://getbootstrap.com/)
+* [modernizr](http://modernizr.com/)
+* [jQuery](http://www.jQuery.com/)
+* [IIS](http://www.iis.net/)
+* [NuGet](https://www.nuget.org/)
+* [NUnit](http://www.nunit.org/)
+* [NSubstitute](http://nsubstitute.github.io/)
 
-# Add your Data to produce your Counter reports 
-This project uses Sample data from **Data** folder to produce Counter and Sushi reports. However, it can be change by updating **ReportDataBase.cs** class GetDataset() method. **ReportDatabase.cs** class is in **Reporting** class library project under **Libraries** folder. Navigate to the GetDataset() Method and start adding different SQL Query/StoredProcedure for different reports (Jr1,Jr5 etc). SQL Query or StoredProcedure added make sure it return appropriate dataset. Dataset’s data must conform to XML Schema file (.xsd) in **Data** folder.
-
-For e.g. jr1 sql query must return dataset same as JR1.xsd in Data folder.
-
-## Authors and Contributors
+# Authors and Contributors
 Thanks to RMIT Training's contributing developers
 * Vijay Kumar Shiyani - [@vijayshiyani](https://github.com/vijayshiyani)
 * Abi Bellamkonda - [@abibell](https://github.com/abibell)
@@ -79,5 +93,5 @@ Thanks to RMIT Training's contributing developers
 * Debashish Paul - [@shimanbb](https://github.com/shimanbb)
 * Anshu Dutta - [@anshudutta](https://github.com/anshudutta)
 
-## Support Contact
+# Support Contact
 Please log any support queries as issues. As this is open source effort, we will provide support as best efforts.
