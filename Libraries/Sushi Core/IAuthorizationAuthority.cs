@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,22 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
+*/
+namespace RMIT.Counter.Libraries.Sushi.Core
+{
+    /// <summary>
+    ///     Defines an interface for components that can verify a requestor's authority
+    ///     to view usage for the specified customer.
+    /// </summary>
+    public interface IAuthorizationAuthority
+    {
+        /// <summary>
+        ///     Gets a value indicating whether or not the indicated requestor is authorized
+        ///     to view usage statistics for the specified customer.
+        /// </summary>
+        /// <param name="requestor">The requesting party.</param>
+        /// <param name="targetCustomer">The target customer.</param>
+        /// <returns>True if the requestor is authorized to view usage statistics for the specified customer; otherwise, false.</returns>
+        bool IsRequestorAuthorized(Requestor requestor, CustomerReference targetCustomer);
+    }
+}

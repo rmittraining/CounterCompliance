@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,38 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using System.IO;
+using System.Xml.Linq;
+using System.Xml.Serialization;
+
+#endregion
+
+namespace Sushi.Client
+{
+    /// <summary>
+    ///     Provides presentation-specific extensions for all objects.
+    /// </summary>
+    public static class ObjectExtensions
+    {
+        /// <summary>
+        ///     Serializes the object graph into an instance of the <see cref="XElement" /> class.
+        /// </summary>
+        /// <param name="data">The object graph to serialize.</param>
+        /// <returns>An instance of the <see cref="XElement" /> class containing the Xml-serialized object graph.</returns>
+        public static XElement SerializeToXElement(this object data)
+        {
+            if (data == null) return null;
+
+            var dataType = data.GetType();
+            var serializer = new XmlSerializer(dataType);
+            using (var writer = new StringWriter())
+            {
+                serializer.Serialize(writer, data);
+                return XElement.Parse(writer.ToString());
+            }
+        }
+    }
+}

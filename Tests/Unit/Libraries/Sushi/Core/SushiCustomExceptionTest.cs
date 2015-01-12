@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,32 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using NUnit.Framework;
+using RMIT.Counter.Libraries.Sushi.Core;
+
+#endregion
+
+namespace RMIT.Counter.Test.Unit.Libraries.Sushi.Core
+{
+    [TestFixture]
+    public class SushiCustomExceptionTest
+    {
+        [Test]
+        public void NumberRetention()
+        {
+            //Arrange
+            const string message = "test";
+            const int errorNumber = 1234;
+
+            //Act
+            var value = new SushiCustomException(message, errorNumber);
+
+            //Assert
+            Assert.AreEqual(message, value.Message);
+            Assert.AreEqual(errorNumber, value.HResult);
+        }
+    }
+}

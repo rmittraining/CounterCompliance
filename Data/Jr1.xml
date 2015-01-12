@@ -1,0 +1,93 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <VendorName>Sample VendorName</VendorName>
+    <VendorID>http://sample.com.au</VendorID>
+    <VendorContactName>Customer Service</VendorContactName>
+    <VendorContactEmail>support@sample.com.au</VendorContactEmail>
+    <CustomerName>University Library</CustomerName>
+    <CustomerId>00</CustomerId>
+    <CustomerContactName>Library Resources and Access</CustomerContactName>
+    <CustomerContactEmail>orders.library@sample.edu.au</CustomerContactEmail>
+    <CreatedDateTime>2014-12-19T11:45:13.54+11:00</CreatedDateTime>
+    <StartDate>2014-02-01T00:00:00+11:00</StartDate>
+    <EndDate>2014-02-28T00:00:00+11:00</EndDate>
+  </Table>
+  <Table1>
+    <Print_ISSN>0001</Print_ISSN>
+    <Platform>Informit</Platform>
+    <Publisher>XXX publisher</Publisher>
+    <Name>XXX journal</Name>
+    <DataType>Journal</DataType>
+  </Table1>
+  <Table1>
+    <Print_ISSN>0002</Print_ISSN>
+    <Platform>Informit</Platform>
+    <Publisher>YYY publisher</Publisher>
+    <Name>YYY journal</Name>
+    <DataType>Journal</DataType>
+  </Table1>
+  <Table1>
+    <Print_ISSN>0003</Print_ISSN>
+    <Platform>Informit</Platform>
+    <Publisher>ZZZ publisher</Publisher>
+    <Name>ZZZ journal</Name>
+    <DataType>Journal</DataType>
+  </Table1>
+  <Table1>
+    <Print_ISSN>0004</Print_ISSN>
+    <Platform>Informit</Platform>
+    <Publisher>AAA publisher</Publisher>
+    <Name>AAA journal</Name>
+    <DataType>Journal</DataType>
+  </Table1>
+  <Table2>
+    <Month>2</Month>
+    <Year>2014</Year>
+    <PeriodStart>2014-02-01T00:00:00+11:00</PeriodStart>
+    <PeriodEnd>2014-02-28T00:00:00+11:00</PeriodEnd>
+    <Category>Requests</Category>
+    <ISSN>0001</ISSN>
+    <ft_pdf>4</ft_pdf>
+    <ft_html>0</ft_html>
+    <ft_total>4</ft_total>
+  </Table2>
+  <Table2>
+    <Month>2</Month>
+    <Year>2014</Year>
+    <PeriodStart>2014-02-01T00:00:00+11:00</PeriodStart>
+    <PeriodEnd>2014-02-28T00:00:00+11:00</PeriodEnd>
+    <Category>Requests</Category>
+    <ISSN>0002</ISSN>
+    <ft_pdf>3</ft_pdf>
+    <ft_html>0</ft_html>
+    <ft_total>3</ft_total>
+  </Table2>
+  <Table2>
+    <Month>2</Month>
+    <Year>2014</Year>
+    <PeriodStart>2014-02-01T00:00:00+11:00</PeriodStart>
+    <PeriodEnd>2014-02-28T00:00:00+11:00</PeriodEnd>
+    <Category>Requests</Category>
+    <ISSN>0003</ISSN>
+    <ft_pdf>11</ft_pdf>
+    <ft_html>0</ft_html>
+    <ft_total>11</ft_total>
+  </Table2>
+  <Table2>
+    <Month>2</Month>
+    <Year>2014</Year>
+    <PeriodStart>2014-02-01T00:00:00+11:00</PeriodStart>
+    <PeriodEnd>2014-02-28T00:00:00+11:00</PeriodEnd>
+    <Category>Requests</Category>
+    <ISSN>0004</ISSN>
+    <ft_pdf>1</ft_pdf>
+    <ft_html>0</ft_html>
+    <ft_total>1</ft_total>
+  </Table2>
+  <Table3>
+    <Year>2014</Year>
+    <Month>2</Month>
+    <Month_Total>19</Month_Total>
+  </Table3>
+</NewDataSet>

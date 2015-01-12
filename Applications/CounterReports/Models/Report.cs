@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,53 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using System;
+using System.ComponentModel.DataAnnotations;
+
+#endregion
+
+namespace CounterReports.Models
+{
+    public class Report
+    {
+        public String Users { get; set; }
+
+        [Required]
+        // ReSharper disable InconsistentNaming
+        public String Report_Template { get; set; }
+
+        [Required]
+        public String Report_Start_Date_DFY { get; set; }
+
+        [Required]
+        public String Report_Start_Date_DFM { get; set; }
+
+        [Required]
+        public String Report_Start_Date_DFD { get; set; }
+
+        public String Report_On_FullText_Subscription { get; set; }
+        public String Report_Name { get; set; }
+
+        [Required]
+        public String Report_Format { get; set; }
+
+        [Required]
+        public String Report_End_Date_DFY { get; set; }
+
+        [Required]
+        public String Report_End_Date_DFM { get; set; }
+
+        [Required]
+        public String Report_End_Date_DFD { get; set; }
+
+        public String Report_Desc { get; set; }
+        public String Organisation_Name { get; set; }
+        public String id { get; set; }
+        public String formstatus { get; set; }
+        public String Creation_Date { get; set; }
+        // ReSharper restore InconsistentNaming
+    }
+}

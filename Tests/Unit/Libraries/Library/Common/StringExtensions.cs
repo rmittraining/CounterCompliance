@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,34 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using NUnit.Framework;
+using RMIT.Counter.Libraries.Library.Common;
+
+#endregion
+
+namespace RMIT.Counter.Test.Unit.Libraries.Library.Common
+{
+    [TestFixture]
+    public class StringExtensionsTest
+    {
+        [Test]
+        public void ToProperCase()
+        {
+            var expect = "Abc";
+            var result = "abc".ToProperCase();
+            Assert.AreEqual(expect, result);
+
+            expect = "The Project Is Ok";
+            result = "the project is ok".ToProperCase();
+            Assert.AreEqual(expect, result);
+
+
+            expect = "The Project Is Ok, But How To Prove It?";
+            result = "the project is ok, but how to prove it?".ToProperCase();
+            Assert.AreEqual(expect, result);
+        }
+    }
+}

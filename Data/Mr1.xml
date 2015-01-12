@@ -1,0 +1,85 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <VendorName>RMIT Publishing</VendorName>
+    <VendorID>http://search.informit.com.au</VendorID>
+    <VendorContactName>Customer Service</VendorContactName>
+    <VendorContactEmail>support@rmitpublishing.com.au</VendorContactEmail>
+    <CustomerName>RMIT University Library</CustomerName>
+    <CustomerId>50</CustomerId>
+    <CustomerContactName>Library Resources and Access</CustomerContactName>
+    <CustomerContactEmail>orders.library@rmit.edu.au</CustomerContactEmail>
+    <CreatedDateTime>2014-12-19T11:59:42.317+11:00</CreatedDateTime>
+    <StartDate>2014-02-01T00:00:00+11:00</StartDate>
+    <EndDate>2014-02-28T00:00:00+11:00</EndDate>
+  </Table>
+  <Table1>
+    <Platform>Informit</Platform>
+    <Publisher>AAA News</Publisher>
+    <DataType>Collection</DataType>
+    <Collection>TVNEWS</Collection>
+  </Table1>
+  <Table1>
+    <Platform>Informit</Platform>
+    <Publisher>BBB TELEVISION</Publisher>
+    <DataType>Collection</DataType>
+    <Collection>TVNEWS</Collection>
+  </Table1>
+  <Table1>
+    <Platform>Informit</Platform>
+    <Publisher>CCC TELEVISION Adelaide</Publisher>
+    <DataType>Collection</DataType>
+    <Collection>TVNEWS</Collection>
+  </Table1>
+  <Table1>
+    <Platform>Informit</Platform>
+    <Publisher>DDD TELEVISION Darwin</Publisher>
+    <DataType>Collection</DataType>
+    <Collection>TVNEWS</Collection>
+  </Table1>
+  <Table2>
+    <Month>2</Month>
+    <Year>2014</Year>
+    <PeriodStart>2014-02-01T00:00:00+11:00</PeriodStart>
+    <PeriodEnd>2014-02-28T00:00:00+11:00</PeriodEnd>
+    <Category>Requests</Category>
+    <Multimedia>1</Multimedia>
+    <Publisher>AAA News</Publisher>
+    <Collection>TVNEWS</Collection>
+  </Table2>
+  <Table2>
+    <Month>2</Month>
+    <Year>2014</Year>
+    <PeriodStart>2014-02-01T00:00:00+11:00</PeriodStart>
+    <PeriodEnd>2014-02-28T00:00:00+11:00</PeriodEnd>
+    <Category>Requests</Category>
+    <Multimedia>104</Multimedia>
+    <Publisher>BBB TELEVISION</Publisher>
+    <Collection>TVNEWS</Collection>
+  </Table2>
+  <Table2>
+    <Month>2</Month>
+    <Year>2014</Year>
+    <PeriodStart>2014-02-01T00:00:00+11:00</PeriodStart>
+    <PeriodEnd>2014-02-28T00:00:00+11:00</PeriodEnd>
+    <Category>Requests</Category>
+    <Multimedia>1</Multimedia>
+    <Publisher>CCC TELEVISION Adelaide</Publisher>
+    <Collection>TVNEWS</Collection>
+  </Table2>
+  <Table2>
+    <Month>2</Month>
+    <Year>2014</Year>
+    <PeriodStart>2014-02-01T00:00:00+11:00</PeriodStart>
+    <PeriodEnd>2014-02-28T00:00:00+11:00</PeriodEnd>
+    <Category>Requests</Category>
+    <Multimedia>2</Multimedia>
+    <Publisher>DDD TELEVISION Darwin</Publisher>
+    <Collection>TVNEWS</Collection>
+  </Table2>
+  <Table3>
+    <Year>2014</Year>
+    <Month>2</Month>
+    <Month_Total>108</Month_Total>
+  </Table3>
+</NewDataSet>

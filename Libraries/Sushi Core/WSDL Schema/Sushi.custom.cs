@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,22 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+namespace RMIT.Counter.Libraries.Sushi.Core
+{
+    public partial class CustomerReference
+    {
+        public override string ToString()
+        {
+            return Name;
+        }
+    }
 
+    public partial class Range
+    {
+        public override string ToString()
+        {
+            return string.Format("{0:yyyy-MM-dd} - {1:yyyy-MM-dd}", Begin, End);
+        }
+    }
+}

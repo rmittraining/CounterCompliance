@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2014, RMIT Training
 All rights reserved.
 
@@ -25,4 +26,20 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#region
 
+using System.Configuration;
+
+#endregion
+
+namespace RMIT.Counter.Libraries.Reporting.Common
+{
+    public static class VendorInformation
+    {
+        public static string VendorName = ConfigurationManager.AppSettings["VendorName"];
+        public static string VendorId = ConfigurationManager.AppSettings["VendorID"];
+        public static string VendorContactName = ConfigurationManager.AppSettings["VendorContactName"];
+        public static string VendorContactEmail = ConfigurationManager.AppSettings["VendorContactEmail"];
+    }
+}
