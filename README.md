@@ -1,21 +1,21 @@
 **Table of Contents**
-- [Counter Compliance implementation](#)
-	- [Includes](#)
-- [Getting Started](#)
-	- [Download and Run](#)
-	- [View CSV, TSV and HTML Counter Reports](#)
-	- [Retrieve Sushi reports with sushi client](#)
-- [Customisation](#)
-	- [Custom authentication and Authorization](#)
-	- [Using your Data](#)
-- [Project Structure](#)
+- [Counter Compliance implementation](#counter-compliance-implementation)
+	- [Includes](#includes)
+- [Getting Started](#getting-started)
+	- [Download and Compile](#download-and-compile)
+	- [View CSV, TSV and HTML Counter Reports](#view-csv-tsv-and-html-counter-reports)
+	- [Retrieve Sushi reports with sushi client](#retrieve-sushi-reports-with-sushi-client)
+- [Customisation](#customisation)
+	- [Custom authentication and Authorization](#custom-authentication-and-authorization)
+	- [Using your Data](#using-your-data)
+- [Project Structure](#project-structure)
 	- [Applications Folder](#)
 	- [Data folder](#)
 	- [Libraries folder](#)
 	- [Tests folder](#)
-- [Dependencies](#)
-- [Authors and Contributors](#)
-- [Support Contact](#)
+- [Dependencies](#dependencies)
+- [Authors and Contributors](#authors-and-contributors)
+- [Support](#support)
 
 # Counter Compliance implementation
 This is RMIT Training's Open Source implementation of Counter Compliance server for Release 4.
@@ -112,5 +112,5 @@ Thanks to RMIT Training's contributing developers
 * Debashish Paul - [@shimanbb](https://github.com/shimanbb)
 * Anshu Dutta - [@anshudutta](https://github.com/anshudutta)
 
-# Support Contact
+# Support
 Please log any support queries as issues. As this is open source effort, we will provide support as best efforts.
