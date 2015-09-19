@@ -30,7 +30,7 @@ This is RMIT Training's Open Source implementation of Counter Compliance server 
 # Getting Started
 
 ## Download and Compile
-1. Download project from github to “C:\Temp\”. If you choose other location then “C:\Temp\” to download and save project then web.config file of **CounterReports** and **SushiService** project must be change accordingly
+1. Download project from github to “C:\Temp\”. If you choose another location then change “C:\Temp\” to download location in web.config files of **CounterReports** and **SushiService** projects
 ```xml
 <add key="Sushi.CounterXsltFolder" value="C:\Temp\RMIT.Counter\Libraries\Reporting\Reports\Xslt" />
 ```
