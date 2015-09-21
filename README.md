@@ -111,6 +111,7 @@ Thanks to RMIT Training's contributing developers
 * Kirthana Madam Raja [@kirthanaraja](https://github.com/kirthanaraja)
 * Debashish Paul - [@shimanbb](https://github.com/shimanbb)
 * Anshu Dutta - [@anshudutta](https://github.com/anshudutta)
+* Achintha Kuruwita - [@Achinthak](https://github.com/Achinthak)
 
 # Support
 Please log any support queries as issues. As this is open source effort, we will provide support as best efforts.
